@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'loading.dart';
 import 'history.dart';
 import 'about.dart';
+import 'choose.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const LoadingScreen(),
+                          builder: (context) => const ChooseScreen(),
                         ),
                       );
                     },
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     child: const Text(
-                      "START ANALYSIS",
+                      "START",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
